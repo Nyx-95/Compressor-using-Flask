@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor</title>
+    
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    </head>
+
+<body>
+    <section class="main-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-md">
+                <a class="navbar-brand" href="#">Image Compressor</a>
+            </div>
+        </nav>
+    </section>
+    <section class="main-body">
+        <div class="container mainBodyContainer">
+            <div class="input">
+                <button class="upload">
+                    <i class="ri-upload-line"></i>
+                    <label class="label1">Drop Your File Here </label>
+                    <label class="label2">Upto any size</label>
+                </button>
+                <ul class="metadata">
+                    <li>Name: <span></span></li>   
+                    <li>Size: <span></span></li>
+                </ul>
+            </div>
+         
+
+            <div class="progress">
+              <!--  <input type="range" class="input-value" min="10" value="30" max="50" step="any">-->
+                <input type="button" class="input-value" value="50">
+            </div>
+            <div class="preview-container">
+                <div class="previewContainerInner">
+                    <div class="compressed">Original</div>
+                    <div class="bottom">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="previewContainerInner">
+                    <div class="original">Compressed</div>
+                    <div class="top">
+                        <img src="" alt="">
+                    </div>   
+                </div>
+            </div>
+            <div class="output">
+                <button class="download">
+                    <i class="ri-download-line"></i>
+                    <label>Download</label>
+                </button>
+                <ul class="metadata">
+                    <li>We Just Saved Your: <span></span></li>
+                    <li>Size: <span></span></li>
+                </ul>
+            </div>
+            <input type="file" id="hidden-button" style="display: none;" accept="image/*">
+        </div>
+    </section>
+    <section>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Legacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Job openings</a></li>
+                            <li><a href="#">Employee success</a></li>
+                            <li><a href="#">Benefits</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+                        <a href="#" class="iconATag"><i class="icon ion-social-facebook"></i></a>
+                        <a href="#" class="iconATag"><i class="icon ion-social-twitter"></i></a>
+                        <a href="#" class="iconATag"><i class="icon ion-social-snapchat"></i></a>
+                        <a href="#" class="iconATag"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Array Digital</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    </div>
+
+
+    <script src="/static/script.js"></script>
+    <script src="/static/compressor.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</body>
+
+</html>
