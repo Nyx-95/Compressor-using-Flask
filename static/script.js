@@ -33,6 +33,10 @@ hiddenButton.onchange = () => {
         var w = img.width;
         var h = img.height;
 
+       
+            $('.metadata').css({display: "block"});
+
+
         inputMetedata.getElementsByTagName('li')[0].getElementsByTagName('span')[0].innerHTML = file.name;
         inputMetedata.getElementsByTagName('li')[1].getElementsByTagName('span')[0].innerHTML = ((file.size/1024)/1024).toFixed(2) + 'Mb';
         upload.setAttribute('filename', file.name);
@@ -76,15 +80,6 @@ function Compress(q, w, h){
         }
     })
 }
-
-
-$(".upload").click(function () {
-    $('.metadata').css({display: "block"});
-});
-
-
-   
-
 
 
 });
